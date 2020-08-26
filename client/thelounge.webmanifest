@@ -1,7 +1,7 @@
 {
-	"name": "The Lounge",
-	"short_name": "The Lounge",
-	"description": "Self-hosted web IRC client",
+	"name": "JSEO",
+	"short_name": "JSEO",
+	"description": "Self-hosted IRC script",
 	"start_url": ".",
 	"display": "standalone",
 	"theme_color": "#415364",
