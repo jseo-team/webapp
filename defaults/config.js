@@ -192,7 +192,7 @@ module.exports = {
 	//
 	// This value is set to `"The Lounge - https://thelounge.chat"` by
 	// default.
-	leaveMessage: "The Lounge - https://thelounge.chat",
+	leaveMessage: "Jseo - https://jseo-team.github.io",
 
 	// ## Default network
 
@@ -244,10 +244,10 @@ module.exports = {
 		password: "",
 		tls: true,
 		rejectUnauthorized: true,
-		nick: "thelounge%%",
-		username: "thelounge",
-		realname: "The Lounge User",
-		join: "#thelounge",
+		nick: "jseo%%",
+		username: "jseo",
+		realname: "JSEO Web Client",
+		join: "#jseo",
 	},
 
 	// ### `lockNetwork`
