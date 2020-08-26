@@ -26,7 +26,7 @@ class Utils {
 			return home;
 		}
 
-		const distConfig = path.resolve(path.join(__dirname, "..", "..", ".thelounge_home"));
+		const distConfig = path.resolve(path.join(__dirname, "..", "..", ".jseo_home"));
 
 		home = fs.readFileSync(distConfig, "utf-8").trim();
 
