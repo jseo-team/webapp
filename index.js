@@ -18,8 +18,7 @@ if (!require("semver").satisfies(process.version, pkg.engines.node)) {
 			process.version +
 			")"
 	);
-	console.error("Please upgrade Node.js in order to use The Lounge");
-	console.error("See https://thelounge.chat/docs/install-and-upgrade");
+	console.error("Please upgrade Node.js in order to use Jseo Web App");
 	console.error();
 
 	process.exit(1);
