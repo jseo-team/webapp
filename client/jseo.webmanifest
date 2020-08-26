@@ -1,7 +1,7 @@
 {
 	"name": "JSEO",
 	"short_name": "JSEO",
-	"description": "Self-hosted IRC script",
+	"description": "Thé Self-hosted Web Script App",
 	"start_url": ".",
 	"display": "standalone",
 	"theme_color": "#415364",
