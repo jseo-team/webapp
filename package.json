@@ -1,16 +1,16 @@
 {
-  "name": "thelounge",
-  "description": "The self-hosted Web IRC client",
-  "version": "4.2.0",
+  "name": "jseo",
+  "description": "The self-hosted Script Host",
+  "version": "1.0.0",
   "preferGlobal": true,
   "bin": {
-    "thelounge": "index.js"
+    "webapp": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thelounge/thelounge.git"
+    "url": "https://github.com/jseo-team/webapp.git"
   },
-  "homepage": "https://thelounge.chat/",
+  "homepage": "https://jseo.entry.repl.co/",
   "scripts": {
     "build": "webpack",
     "coverage": "run-s test:* && nyc --nycrc-path=test/.nycrc-report.json report",
