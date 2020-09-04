@@ -18,17 +18,20 @@ jseo start
 
 
 # Compile / Build
-
+```bash
 yarn build
-
+```
 
 
 
 
 
 # Server start
-
+From source folder
+```bash
 yarn start
-//=//
+```
+(Anywhere) 
+```bash
 jseo start
-
+```
