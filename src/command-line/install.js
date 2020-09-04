@@ -31,11 +31,11 @@ program
 			version: packageVersion,
 		})
 			.then((json) => {
-				if (!("thelounge" in json)) {
+				if (!("jseo" in json)) {
 					log.error(
 						`${colors.red(
 							json.name + " v" + json.version
-						)} does not have The Lounge metadata.`
+						)} does not have JSEO metadata.`
 					);
 
 					process.exit(1);
@@ -48,8 +48,8 @@ program
 					log.error(
 						`${colors.red(
 							json.name + " v" + json.version
-						)} does not support The Lounge v${Helper.getVersionNumber()}. Supported version(s): ${
-							json.thelounge.supports
+						)} does not support JSEO v${Helper.getVersionNumber()}. Supported version(s): ${
+							json.jseo.supports
 						}`
 					);
 
