@@ -9,7 +9,7 @@ jseo start
 jseo add <username>
 
 
-#Configure
+# Configure
 
 set JSEO_HOME=~/.jseo
 jseo start
@@ -17,7 +17,7 @@ jseo start
 
 
 
-#Compile / Build
+# Compile / Build
 
 yarn build
 
@@ -26,7 +26,7 @@ yarn build
 
 
 
-#Server start
+# Server start
 
 yarn start
 //=//
