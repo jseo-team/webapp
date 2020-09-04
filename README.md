@@ -5,7 +5,10 @@ yarn install
 set NODE_ENV=production yarn build
 sudo yarn link
 sudo yarn link "jseo"
-jseo start
+```
+
+To add user <username>
+```
 jseo add <username>
 ```
 
