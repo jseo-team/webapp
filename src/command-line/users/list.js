@@ -33,7 +33,7 @@ program
 		} else {
 			log.info(
 				`There are currently no users. Create one with ${colors.bold(
-					"thelounge add <name>"
+					"jseo add <name>"
 				)}.`
 			);
 		}

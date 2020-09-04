@@ -141,7 +141,7 @@ function setHome(newPath) {
 	}
 
 	const manifestPath = path.resolve(
-		path.join(__dirname, "..", "public", "thelounge.webmanifest")
+		path.join(__dirname, "..", "public", "jseo.webmanifest")
 	);
 
 	// Check if manifest exists, if not, the app most likely was not built
@@ -244,7 +244,7 @@ function passwordCompare(password, expected) {
 
 function getDefaultNick() {
 	if (!this.config.defaults.nick) {
-		return "thelounge";
+		return "jseo";
 	}
 
 	return this.config.defaults.nick.replace(/%/g, () => Math.floor(Math.random() * 10));

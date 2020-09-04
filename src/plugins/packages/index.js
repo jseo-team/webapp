@@ -90,15 +90,15 @@ function loadPackage(packageName) {
 
 		packageInfo = JSON.parse(fs.readFileSync(path.join(packagePath, "package.json"), "utf-8"));
 
-		if (!packageInfo.thelounge) {
-			throw "'thelounge' is not present in package.json";
+		if (!packageInfo.jseo) {
+			throw "'jseo' is not present in package.json";
 		}
 
 		if (
-			packageInfo.thelounge.supports &&
-			!semver.satisfies(Helper.getVersionNumber(), packageInfo.thelounge.supports)
+			packageInfo.jseo.supports &&
+			!semver.satisfies(Helper.getVersionNumber(), packageInfo.jseo.supports)
 		) {
-			throw `v${packageInfo.version} does not support this version of The Lounge. Supports: ${packageInfo.thelounge.supports}`;
+			throw `v${packageInfo.version} does not support this version of JSEO Web App. Supports: ${packageInfo.jseo.supports}`;
 		}
 
 		packageFile = require(packagePath);
@@ -109,7 +109,7 @@ function loadPackage(packageName) {
 	}
 
 	const version = packageInfo.version;
-	packageInfo = packageInfo.thelounge;
+	packageInfo = packageInfo.jseo;
 	packageInfo.packageName = packageName;
 	packageInfo.version = version;
 

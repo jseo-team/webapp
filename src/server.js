@@ -30,7 +30,7 @@ const serverHash = Math.floor(Date.now() * Math.random());
 let manager = null;
 
 module.exports = function (options = {}) {
-	log.info(`The Lounge ${colors.green(Helper.getVersion())} \
+	log.info(`JSEO ${colors.green(Helper.getVersion())} \
 (Node.js ${colors.green(process.versions.node)} on ${colors.green(process.platform)} ${
 		process.arch
 	})`);

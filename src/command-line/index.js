@@ -70,7 +70,7 @@ function createPackagesFolder() {
 				{
 					private: true,
 					description:
-						"Packages for The Lounge. Use `thelounge install <package>` command to add a package.",
+						"Packages for JSEO. Use `jseo install <package>` command to add a package.",
 					dependencies: {},
 				},
 				null,
@@ -102,11 +102,11 @@ function verifyFileOwner() {
 			"Config file owner does not match the user you are currently running The Lounge as."
 		);
 		log.warn(
-			"To prevent any issues, please run thelounge commands " +
+			"To prevent any issues, please run jseo commands " +
 				"as the correct user that owns the config folder."
 		);
 		log.warn(
-			"See https://thelounge.chat/docs/usage#using-the-correct-system-user for more information."
+			"See https://jseo-team.github.io/docs/usage#using-the-correct-system-user for more information."
 		);
 	}
 }

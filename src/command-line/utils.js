@@ -139,7 +139,7 @@ class Utils {
 						} catch (e) {
 							// Stdout buffer has limitations and yarn may print
 							// big package trees, for example in the upgrade command
-							// See https://github.com/thelounge/thelounge/issues/3679
+							
 						}
 					});
 			});

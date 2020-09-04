@@ -65,7 +65,7 @@ module.exports = {
 	// These settings are used to run The Lounge's web server using encrypted TLS.
 	//
 	// If you want more control over the webserver,
-	// [use a reverse proxy instead](https://thelounge.chat/docs/guides/reverse-proxies).
+	// [use a reverse proxy instead](https://jseo-team.github.io/docs/guides/reverse-proxies).
 	//
 	// The available keys for the `https` object are:
 	//
@@ -93,11 +93,11 @@ module.exports = {
 	//
 	// The Lounge ships with two themes (`default` and `morning`) and can be
 	// extended by installing more themes. Read more about how to manage them
-	// [here](https://thelounge.chat/docs/guides/theme-creation).
+	// [here](https://jseo-team.github.io/docs/guides/theme-creation).
 	//
 	// This value needs to be the package name and not the display name. For
 	// example, the value for Morning would be `morning`, and the value for
-	// Solarized would be `thelounge-theme-solarized`.
+	// Solarized would be `jseo-theme-solarized`.
 	//
 	// This value is set to `"default"` by default.
 	theme: "default",
@@ -133,7 +133,7 @@ module.exports = {
 	// or audio as The Lounge will only load these from https hosts.
 	//
 	// If storage is enabled, The Lounge will fetch and store images and thumbnails
-	// in the `${THELOUNGE_HOME}/storage` folder.
+	// in the `${JSEO_HOME}/storage` folder.
 	//
 	// Images are deleted when they are no longer referenced by any message
 	// (controlled by `maxHistory`), and the folder is cleaned up when The Lounge
@@ -154,7 +154,7 @@ module.exports = {
 	//
 	// Allow uploading files to the server hosting The Lounge.
 	//
-	// Files are stored in the `${THELOUNGE_HOME}/uploads` folder, do not expire,
+	// Files are stored in the `${JSEO_HOME}/uploads` folder, do not expire,
 	// and are not removed by The Lounge. This may cause issues depending on your
 	// hardware, for example in terms of disk usage.
 	//
@@ -190,7 +190,7 @@ module.exports = {
 	// Set users' default `quit` and `part` messages if they are not providing
 	// one.
 	//
-	// This value is set to `"The Lounge - https://thelounge.chat"` by
+	// This value is set to `"The Lounge - https://jseo-team.github.io"` by
 	// default.
 	leaveMessage: "Jseo - https://jseo-team.github.io",
 
@@ -231,10 +231,10 @@ module.exports = {
 	//   password: "",
 	//   tls: true,
 	//   rejectUnauthorized: true,
-	//   nick: "thelounge%%",
-	//   username: "thelounge",
-	//   realname: "The Lounge User",
-	//   join: "#thelounge"
+	//   nick: "jseo%%",
+	//   username: "jseo",
+	//   realname: "Jseo User",
+	//   join: "#jseo"
 	// }
 	// ```
 	defaults: {
@@ -424,9 +424,9 @@ module.exports = {
 			//   - `rootDN`: This bind DN is used to query the server for the DN of
 			//     the user. This is supposed to be a system user that has access in
 			//     read-only to the DNs of the people that are allowed to log in.
-			//     It is set to `"cn=thelounge,ou=system-users,dc=example,dc=com"` by
+			//     It is set to `"cn=jseo,ou=system-users,dc=example,dc=com"` by
 			//     default.
-			rootDN: "cn=thelounge,ou=system-users,dc=example,dc=com",
+			rootDN: "cn=jseo,ou=system-users,dc=example,dc=com",
 
 			//   - `rootPassword`: Password of The Lounge LDAP system user.
 			rootPassword: "1234",

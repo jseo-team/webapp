@@ -1,3 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use strict";
 
 const log = require("../log");
@@ -42,8 +59,8 @@ program
 				}
 
 				if (
-					json.thelounge.supports &&
-					!semver.satisfies(Helper.getVersionNumber(), json.thelounge.supports)
+					json.jseo.supports &&
+					!semver.satisfies(Helper.getVersionNumber(), json.jseo.supports)
 				) {
 					log.error(
 						`${colors.red(
