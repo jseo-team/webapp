@@ -43,7 +43,7 @@ ClientManager.prototype.loadUsers = function () {
 
 	if (users.length === 0) {
 		log.info(
-			`There are currently no users. Create one with ${colors.bold("thelounge add <name>")}.`
+			`There are currently no users. Create one with ${colors.bold("jseo add <name>")}.`
 		);
 
 		return;
@@ -90,7 +90,7 @@ ClientManager.prototype.autoloadUsers = function () {
 				if (updatedUsers.length === 0) {
 					log.info(
 						`There are currently no users. Create one with ${colors.bold(
-							"thelounge add <name>"
+							"jseo add <name>"
 						)}.`
 					);
 				}
@@ -131,7 +131,7 @@ ClientManager.prototype.loadUser = function (name) {
 			 * have their latest password. We're not replacing the entire config
 			 * object, because that could have undesired consequences.
 			 *
-			 * @see https://github.com/thelounge/thelounge/issues/598
+			 * 
 			 */
 			client.config.password = userConfig.password;
 			log.info(`Password for user ${colors.bold(name)} was reset.`);
@@ -191,17 +191,17 @@ ClientManager.prototype.addUser = function (name, password, enableLog) {
 			);
 			log.warn(
 				"The file owner has been changed to the expected user. " +
-					"To prevent any issues, please run thelounge commands " +
+					"To prevent any issues, please run jseo commands " +
 					"as the correct user that owns the config folder."
 			);
 			log.warn(
-				"See https://thelounge.chat/docs/usage#using-the-correct-system-user for more information."
+				"See using-the-correct-system-user for more information."
 			);
 			fs.chownSync(userPath, userFolderStat.uid, userFolderStat.gid);
 		}
 	} catch (e) {
 		// We're simply verifying file owner as a safe guard for users
-		// that run `thelounge add` as root, so we don't care if it fails
+		// that run `jseo add` as root, so we don't care if it fails
 	}
 
 	return true;
