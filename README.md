@@ -2,7 +2,8 @@
 # Install
 ```bash
 yarn install
-set NODE_ENV=production yarn build
+NODE_ENV=production 
+yarn build
 sudo yarn link
 sudo yarn link "jseo"
 ```
@@ -14,7 +15,7 @@ jseo add <username>
 
 # Configure
 ```bash
-set JSEO_HOME=~/.jseo
+JSEO_HOME=~/.jseo
 jseo start
 ```
 
